@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
     <script src="https://kit.fontawesome.com/7eb9da4a1a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- header -->
@@ -21,11 +24,12 @@
 
     <!-- video player -->
     <section class="player">
-        <video controls autoplay src="SNOW.MP4"></video>
+        <video controls autoplay src="video/SNOW.MP4"></video>
     </section>
 
     <!-- video info -->
     <section class="info">
+        <!-- meta-data -->>
         <div class="meta-data">
             <ul class="hashtag">
                 <li>#강릉</li>
@@ -33,11 +37,14 @@
                 <li>#바다</li>
                 <li>#여행</li>
             </ul>
+            <i class="fas fa-caret-dowm"></i>
             <div class="video-data">
-                <span class="video__name"></span>
-                <i class="fas fa-caret-dowm"></i>
+                <span class="video__name">강릉에서 바다보며 1박2일</span>
+                <span class="views">조회수 4.5천회</span>
+                <span class="uploaded-time">3시간 전</span>
             </div>
         </div>
+        <!-- video actions -->
         <ul class="actions">
             <button><i class="fas fa-thumbs-up"></i><span>1천</span></button>
             <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
@@ -45,31 +52,35 @@
             <button><i class="fas fa-download"></i><span>오프라인 저장</span></button>
             <button><i class="fas fa-plus"></i><span>저장</span></button>
         </ul>
+        <!-- channel info -->
         <div class="channel">
-            <img class="profile" src="thumbnail.JPG" />
+            <img class="profile" src="image/thumbnail.JPG" />
             <span>yujung</span>
             <span>구독자 5만명</span>
         </div>
-        <div>subscribe</div>
+        <div class="subscribe">구독</div>
     </section>
 
     <!-- up next -->
     <secion class="up-next">
         <ul>
-            <li>
-                <img src="" alt="">
-                <span class=""></span>
-                <span></span><span></span>
+            <li class="next-video">
+                <img src="image/thumbnail__git log.png" alt="">
+                <span class="title">git 명령어 사용-2</span>
+                <span>yujung</span>
+                <span>조회수 1.2만회</span>
             </li>
-            <li>
-                <img src="" alt="">
-                <span class=""></span>
-                <span></span><span></span>
+            <li class="next-video">
+                <img src="image/thumbnail__git remote.png" alt="">
+                <span class="title">깃과 깃허브 연결</span>
+                <span>yujung</span>
+                <span>조회수 2.3만회</span>
             </li>
-            <li>
-                <img src="" alt="">
-                <span class=""></span>
-                <span></span><span></span>
+            <li class="next-video">
+                <img src="image/thumbnail__git push.png" alt="">
+                <span class="title">git push 안될 때</span>
+                <span>yujung</span>
+                <span>조회수 3.4만회</span>
             </li>
         </ul>
     </secion>

@@ -1,6 +1,6 @@
 :root {
     /* size */
-    --side-padding: 12px;
+    --padding: 12px;
     --avatar-size: 36px;
 
     /* font size */
@@ -11,7 +11,7 @@
 
     /* color */
     --white-color: #f9f9f9;
-    --black-color: ##000000;
+    --black-color: #000000;
     --grey-dark-color: #252525;
     --grey-light-color: #909090;
     --red-color: #ff0000;
@@ -24,7 +24,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+~`
 body {
     font-family: Roboto;
 }
@@ -35,8 +35,27 @@ header {
     justify-content: space-between;
     background-color: var(--grey-dark-color);
     color: var(--white-color);
-}
+    font-size: var(--font-large);
+    padding: var(--padding);
+}`
 
 header .logo i {
     color: #ff0000;
+}
+
+header .logo .name {
+    font-weight: bold;
+}
+
+.player {
+    background-color: var(--black-color);
+    width: 100%;
+    height: auto;
+}
+
+.player video {
+    display: block;
+    paddin
+    margin: auto;
+    max-width: 1042px;
 }

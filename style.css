@@ -4,7 +4,7 @@
     --avatar-size: 36px;
 
     /* font size */
-    --font-large: 18px;
+    --font-large: 16px;
     --font-medium: 14px;
     --font-small: 12px;
     --font-micro: 10px;
@@ -24,9 +24,18 @@
     margin: 0;
     box-sizing: border-box;
 }
-~`
+
 body {
     font-family: Roboto;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background-color: white;
 }
 
 /* header */
@@ -55,7 +64,45 @@ header .logo .name {
 
 .player video {
     display: block;
-    paddin
     margin: auto;
     max-width: 1042px;
+}
+
+.meta-data {
+    padding: 20px 0 8px 0;
+}
+
+.hashtag {
+    display: flex;
+    color: var(--blue-color);
+    font-size: var(--font-micro);
+}
+
+.video__name {
+    display: block;
+    font-size: var(--font-large);
+    font-weight: 500;
+}
+
+.detail {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-data {
+    display: flex;
+    color: var(--grey-dark-color);
+    font-size: var(--font-small);
+    align-items: center;
+}
+
+.actions i {
+    color: var(--grey-dark-color);
+}
+
+/* 채널 데이터*/
+.channel img {
+    width: 48px;
+    height: 40px;
 }

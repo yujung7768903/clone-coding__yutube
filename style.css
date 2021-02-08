@@ -5,15 +5,15 @@
 
     /* font size */
     --font-large: 16px;
-    --font-medium: 14px;
-    --font-small: 12px;
-    --font-micro: 10px;
+    --font-medium: 15px;
+    --font-small: 13px;
+    --font-micro: 11px;
 
     /* color */
     --white-color: #f9f9f9;
     --black-color: #000000;
     --grey-dark-color: #252525;
-    --grey-light-color: #909090;
+    --grey-light-color: rgba(0, 0, 0, 0.1);
     --red-color: #ff0000;
     --blue-color: #216fd5; 
     --blue-light-color: #87b5d8; 
@@ -69,6 +69,7 @@ header .logo .name {
 }
 
 .meta-data {
+    border-bottom: 1px solid var(--grey-light-color);
     padding: 20px 0 8px 0;
 }
 
@@ -92,17 +93,39 @@ header .logo .name {
 
 .video-data {
     display: flex;
+    align-items: center;
     color: var(--grey-dark-color);
     font-size: var(--font-small);
-    align-items: center;
 }
 
 .actions i {
     color: var(--grey-dark-color);
 }
 
+.channel-Info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
 /* 채널 데이터*/
-.channel img {
+.profile {
     width: 48px;
-    height: 40px;
+    height: 48px;
+    margin-right: 15px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+}
+
+.channel {
+    flex-grow: 1;
+}
+
+.channel .followers {
+    font-size: var(--font-micro);
 }

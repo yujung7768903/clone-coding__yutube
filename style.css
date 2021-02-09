@@ -10,11 +10,14 @@
     --font-micro: 11px;
 
     /* color */
-    --white-color: #f9f9f9;
+    --white-color: #ffffff;
+    --white-to-grey-color: #f9f9f9;
     --black-color: #000000;
+    --grey-color: #9a9a9a;
     --grey-dark-color: #252525;
     --grey-light-color: rgba(0, 0, 0, 0.1);
-    --red-color: #ff0000;
+    --logo-red-color: #ff0000;
+    --button-red-color: #cc0000;
     --blue-color: #216fd5; 
     --blue-light-color: #87b5d8; 
 }
@@ -27,6 +30,7 @@
 
 body {
     font-family: Roboto;
+    background-color: var(--white-to-grey-color);
 }
 
 li {
@@ -35,29 +39,32 @@ li {
 
 button {
     border: none;
-    background-color: white;
 }
 
 /* header */
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--grey-dark-color);
+    background-color: var(--white-color);
     color: var(--white-color);
     font-size: var(--font-large);
     padding: var(--padding);
-}`
+}
 
 header .logo i {
-    color: #ff0000;
+    color: var(--logo-red-color);
 }
 
 header .logo .name {
+    color: var(--black-color);
     font-weight: bold;
 }
 
+header .icon i{
+    color: var(--grey-dark-color);
+}
+
 .player {
-    background-color: var(--black-color);
     width: 100%;
     height: auto;
 }
@@ -98,8 +105,17 @@ header .logo .name {
     font-size: var(--font-small);
 }
 
-.actions i {
-    color: var(--grey-dark-color);
+.actions button {
+    background-color: var(--white-to-grey-color);
+    padding-right: 6px;
+}
+
+.actions button i {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    font-size: 24px;
+    color: var(--grey-color);
 }
 
 .channel-Info {
@@ -128,4 +144,15 @@ header .logo .name {
 
 .channel .followers {
     font-size: var(--font-micro);
+}
+
+.subscribe {
+    width: 72px;
+    height: 38px;
+    border-radius: 2.5px;
+    padding: 10px 16px;
+    background-color: var(--button-red-color);
+    text-align: center;
+    font-size: var(--font-medium);
+    color: var(--white-color);
 }

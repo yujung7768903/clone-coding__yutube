@@ -11,83 +11,87 @@
 </head>
 <body>
     <!-- header -->
-    <header>
-        <div class="logo">
-            <i class="fab fa-youtube"></i>
-            <span class="name">YouTube</span>
-        </div>
-        <div class="icon">
-            <i class="fas fa-search"></i>
-            <i class="fas fa-ellipsis-v"></i>
-        </div>
-    </header>
-
-    <!-- video player -->
-    <section class="player">
-        <video controls autoplay src="video/SNOW.MP4"></video>
-    </section>
-
-    <!-- video info -->
-    <section class="info">
-        <!-- meta-data -->
-        <div class="meta-data">
-            <ul class="hashtag">
-                <li>#강릉</li>
-                <li>#강릉해변</li>
-                <li>#바다</li>
-                <li>#여행</li>
-            </ul>
-            <span class="video__name">강릉에서 바다보며 1박2일</span>
-            <div class="detail">
-                <div class="video-data">
-                    <div class="views">조회수 4.5천회</div>
-                    <div class="uploaded-time">•2020.5.6</div>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fab fa-youtube"></i>
+                <span class="name">YouTube</span>
+            </div>
+            <div class="icon">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </header>
+        
+        <div class="current-video">
+            <!-- video player -->
+            <section class="player">
+                <video controls autoplay src="video/SNOW.MP4"></video>
+            </section>
+    
+            <!-- video info -->
+            <section class="info">
+                <!-- meta-data -->
+                <div class="meta-data">
+                    <ul class="hashtag">
+                        <li>#강릉</li>
+                        <li>#강릉해변</li>
+                        <li>#바다</li>
+                        <li>#여행</li>
+                    </ul>
+                    <span class="video__name">강릉에서 바다보며 1박2일</span>
+                    <div class="detail">
+                        <div class="video-data">
+                            <div class="views">조회수 4.5천회</div>
+                            <div class="uploaded-time">•2020.5.6</div>
+                        </div>
+                        <!-- video actions -->
+                        <ul class="actions">
+                            <button><i class="fas fa-thumbs-up"></i><span>1천</span></button>
+                            <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+                            <button><i class="fas fa-share"></i><span>공유</span></button>
+                            <button><i class="fas fa-download"></i><span>오프라인 저장</span></button>
+                            <button><i class="fas fa-plus"></i><span>저장</span></button>
+                        </ul>
+                    </div>
                 </div>
-                <!-- video actions -->
-                <ul class="actions">
-                    <button><i class="fas fa-thumbs-up"></i><span>1천</span></button>
-                    <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
-                    <button><i class="fas fa-share"></i><span>공유</span></button>
-                    <button><i class="fas fa-download"></i><span>오프라인 저장</span></button>
-                    <button><i class="fas fa-plus"></i><span>저장</span></button>
-                </ul>
-            </div>
+                <!-- channel info -->
+                <div class="channel-Info">
+                    <div class="profile">
+                        <img src="image/thumbnail.JPG" />
+                    </div>
+                    <div class="channel">
+                        <div class="name">yujung</div>
+                        <div class="followers">구독자 5만명</div>
+                    </div>
+                    <div class="subscribe">구독</div>
+                </div>
+            </section>
         </div>
-        <!-- channel info -->
-        <div class="channel-Info">
-            <div class="profile">
-                <img src="image/thumbnail.JPG" />
-            </div>
-            <div class="channel">
-                <div class="name">yujung</div>
-                <div class="followers">구독자 5만명</div>
-            </div>
-            <div class="subscribe">구독</div>
-        </div>
-    </section>
 
-    <!-- up next -->
-    <secion class="up-next">
-        <ul>
-            <li class="next-video">
-                <img src="image/thumbnail__git log.png" alt="">
-                <span class="title">git 명령어 사용-2</span>
-                <span>yujung</span>
-                <span>조회수 1.2만회</span>
-            </li>
-            <li class="next-video">
-                <img src="image/thumbnail__git remote.png" alt="">
-                <span class="title">깃과 깃허브 연결</span>
-                <span>yujung</span>
-                <span>조회수 2.3만회</span>
-            </li>
-            <li class="next-video">
-                <img src="image/thumbnail__git push.png" alt="">
-                <span class="title">git push 안될 때</span>
-                <span>yujung</span>
-                <span>조회수 3.4만회</span>
-            </li>
-        </ul>
-    </secion>
+        <!-- up next -->
+        <secion class="up-next">
+            <ul>
+                <li class="next-video">
+                    <img src="image/thumbnail__git log.png" alt="">
+                    <span class="title">git 명령어 사용-2</span>
+                    <span>yujung</span>
+                    <span>조회수 1.2만회</span>
+                </li>
+                <li class="next-video">
+                    <img src="image/thumbnail__git remote.png" alt="">
+                    <span class="title">깃과 깃허브 연결</span>
+                    <span>yujung</span>
+                    <span>조회수 2.3만회</span>
+                </li>
+                <li class="next-video">
+                    <img src="image/thumbnail__git push.png" alt="">
+                    <span class="title">git push 안될 때</span>
+                    <span>yujung</span>
+                    <span>조회수 3.4만회</span>
+                </li>
+            </ul>
+        </secion>
+    </div>
 </body>
 </html>

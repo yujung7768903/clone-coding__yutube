@@ -1,14 +1,16 @@
 :root {
-    /*padding & margin size */
-    --padding-header-side: 12px;
+    /*size */
+    --padding-header-side: 20px;
     --padding-current-video-side: 60px;
     --padding-main-top: 24px;
     --avatar-size: 36px;
+    --margin-next-video: 8px;
 
     /* font size */
     --font-large: 16px;
     --font-medium: 15px;
     --font-small: 13px;
+    margin-right: var(--margin-next-video);
     --font-micro: 11px;
 
     /* color */
@@ -62,17 +64,19 @@ header {
     padding: var(--padding-header-side);
 }
 
-header .logo i {
+header i {
+    width: 24px;
+    height: 24px;
+    color: var(--grey-dark-color);
+}
+
+header .logo .fa-youtube {
     color: var(--logo-red-color);
 }
 
 header .logo .name {
     color: var(--black-color);
     font-weight: bold;
-}
-
-header .icon i {
-    color: var(--grey-dark-color);
 }
 
 .current-video {
@@ -175,13 +179,26 @@ header .icon i {
     color: var(--white-color);
 }
 
+/*next-video*/
 .up-next {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     width: 402px;
 }
 
+.up-next .next-video {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: var(--margin-next-video);
+}
+
 .up-next .next-video img {
     width: 168px;
     height: 94px;
+    margin-right: var(--margin-next-video);
+}
+
+.up-next .next-video .next-video-data {
+    display: flex;
+    flex-direction: column;
 }
